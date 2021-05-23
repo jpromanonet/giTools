@@ -9,8 +9,6 @@ A powerful script to concurrently clone your entire GitHub instance or save it a
 [![PyPi](https://img.shields.io/pypi/v/github-archive)](https://pypi.org/project/github-archive)
 [![Licence](https://img.shields.io/github/license/justintime50/GitHub-archive)](LICENSE)
 
-<img src="assets/showcase.png" alt="Showcase">
-
 </div>
 
 GitHub Archive will clone any repo and gist that doesn't exist locally and pull those that do from the main branch of each repo and latest revision of each gist that you have access to - including organizations (if configured).
