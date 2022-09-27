@@ -2,7 +2,7 @@
 
 '''
 CNTX={users}; NAME={username}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
+curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=10000" |
   grep -e 'clone_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
@@ -12,7 +12,7 @@ curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
 
 '''
 CNTX={orgs}; NAME={orgname}; PAGE=1
-curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=100" |
+curl "https://api.github.com/$CNTX/$NAME/repos?page=$PAGE&per_page=10000" |
   grep -e 'clone_url*' |
   cut -d \" -f 4 |
   xargs -L1 git clone
